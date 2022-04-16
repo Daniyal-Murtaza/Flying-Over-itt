@@ -3,11 +3,13 @@
 #include "drawing.hpp"
 #include "unit.hpp"
 
-class Pigeon : public Unit
+class Bee : public Unit
 {
     int frame = 0;
+    bool hover = false;
+    int counter = 0;
 
 public:
     void fly();
-    Pigeon(int x, int y);
+    Bee(int x, int y);
 };
